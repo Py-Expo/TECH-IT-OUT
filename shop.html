@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/* New style for the heading */
+.heading {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<h1 class="heading">Shop Products</h1>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="assets\images\product-1.png" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>product-1</h2>
+        <p class="title">Classic view</p>
+        <p>DRY washed clothes with nice condition</p>
+        <p>example@example.com</p>
+        <p><button class="button" onclick="addToCart('Product 1', 4190.99)">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add more products here -->
+  <div class="column">
+    <div class="card">
+      <img src="assets\images\product-2.png" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>product-2</h2>
+        <p class="title">Art Of Thing</p>
+        <p>shows the mankind of love from us</p>
+        <p>example@example.com</p>
+        <p><button class="button" onclick="addToCart('Product 2', 2999.99)">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Add more products here -->
+  <div class="column">
+    <div class="card">
+      <img src="assets\images\product-3.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>product-3</h2>
+        <p class="title">Designoo</p>
+        <p>Creations are always worth it</p>
+        <p>example@example.com</p>
+        <p><button class="button" onclick="addToCart('Product 3', 1499.99)">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add more products here -->
+  <div class="column">
+    <div class="card">
+      <img src="assets\images\product-4.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>product-4</h2>
+        <p class="title">Art of Nature</p>
+        <p>Discover the beauty of nature</p>
+        <p>example@example.com</p>
+        <p><button class="button" onclick="addToCart('Product 4', 2599.99)">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add more products here -->
+  <div class="column">
+    <div class="card">
+      <img src="assets\images\product-5.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>product-5</h2>
+        <p class="title">Eco-Friendly</p>
+        <p>Environmentally sustainable products</p>
+        <p>example@example.com</p>
+        <p><button class="button" onclick="addToCart('Product 5', 1999.99)">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Add more products here -->
+  <div class="column">
+    <div class="card">
+      <img src="assets\images\product-6.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>product-6</h2>
+        <p class="title">Digital Art</p>
+        <p>Express your creativity digitally</p>
+        <p>example@example.com</p>
+        <p><button class="button" onclick="addToCart('Product 6', 3499.99)">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Add more products here -->
+  <div class="column">
+    <div class="card">
+      <img src="assets\images\product-7.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>product-7</h2>
+        <p class="title">Tech Gadgets</p>
+        <p>Explore the latest in tech</p>
+        <p>example@example.com</p>
+        <p><button class="button" onclick="addToCart('Product 7', 999.99)">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Add more products here -->
+  <div class="column">
+    <div class="card">
+      <img src="assets\images\product-8.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>product-8</h2>
+        <p class="title">Health & Fitness</p>
+        <p>Stay healthy and fit</p>
+        <p>example@example.com</p>
+        <p><button class="button" onclick="addToCart('Product 8', 799.99)">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Add more products here -->
+  <div class="column">
+    <div class="card">
+      <img src="assets\images\product-9.png
